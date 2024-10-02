@@ -1,1 +1,112 @@
-<h1> Hello World </h>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Keyly</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-info">
+            <h1 id="name"> Keyly Gonzalez </h1>
+            <h1>Preferred Name: Keyly </h1>
+	    <h2>Lewis Email</h2>
+		<p>
+            <a href="mailto:keylybgonzalez@lewisu.edu">keylybgonzalez@lewisu.edu</a>
+		</p>	
+            <h2> Discord Information</h2>
+            <p> @keyygonza08</p>
+        </header>
+
+	     <section class="pic">
+            <a href="me.html">
+	             <img src="me.png" alt="Me" width="300" height="400">
+             </a>
+		     </section>
+	    
+        <section class="introduction">
+		<h2>Introduction </h2>
+			<p> My name is Keyly Gonzalez. I&rsquo;m the middle child of two other sisters. I love to listen to music, scroll on my phone, and crocheting.</p>
+			<p>Major: Criminal Justice. Minor: Possibly CyberSecurity </p>
+
+            
+		<h2>What I Hope to Learn in this Course:</h2> 
+			<li> How to Code </li>
+			<li> Learn what else technology can do </li>
+			<li> Create new projects with coding </li>
+		<h2>My Favorite Hobby/Activity:</h2> 
+			<ul>
+			<li style="list-style-type:square">Crocheting</li>
+			<li style="list-style-type:square">Listen to K-Pop music</li>
+				<a href="https://en.wikipedia.org/wiki/K-pop">What is K-Pop?</a>
+				 <a href="https://www.youtube.com/channel/UC9rMiEjNaCSsebs31MRDCRA">Example of K-pop: StrayKids</a>
+			<li style="list-style-type:square">Play games on my phone</li>
+			</ul>
+        </section>
+
+		<section class="course">
+            <h2>Reasons for Taking This Course</h2>
+            <p> I&rsquo;m thinking of minoring in CyberSecurity. If I enjoy this class, then I&rsquo;ll apply for the minor. </p>
+        </section>
+
+		<section class="job">
+            <h2>Current/Recent Job</h2>
+		<p> Currently a secretary at my church. I am responsible of taking care of responsibilities/events that happen inside the church and maintain a religious minsdset to customers. </p>
+        </section>		
+
+        <section class="hobbies">
+            <h2>Hobbies and Special Interests</h2>
+            <p> I love listening to music, especially K-pop, crocheting, play games on my phone, and just chill. </p>
+        </section>
+
+        <section class="fun-fact">
+            <h2>Fun Fact</h2>
+            <p> You&rsquo;ll never catch me not wearing earbuds. I&rsquo;m a music addict. I also love hamsters. </p>
+        </section>
+        <section class="animation">
+            <img id="hamster" src="hamster2.gif" alt="Hamster" width="100" height="100">
+        </section>
+
+        <script>
+            const hamster = document.getElementById('hamster');
+            let position = 0;
+
+            function animateHamster() {
+                position += 1;
+                hamster.style.transform = `translateX(${position}px)`;
+                if (position < window.innerWidth) {
+                    requestAnimationFrame(animateHamster);
+                }
+            }
+
+            animateHamster();
+        </script>
+
+	  <section class="Updated">
+            <h2>Last Updated</h2>
+            <p>09/22/2024</p>
+        </section>
+       <section class="time">
+        <h2>Little Surprise</h2>
+        <p>Click for hearts</p>
+        <button onclick="setTimeout(myFunction,2000);"><3</button>
+        <script>
+            function myFunction() {
+                alert('<3<3<3');
+            }
+        </script>
+
+       </section>
+       <script>
+        const nameElement = document.getElementById('name');
+        nameElement.addEventListener('click', function() {
+            const favoriteColor = 'red';
+            nameElement.style.color = favoriteColor;
+
+        });
+       </script>
+        
+    </div>
+</body>
+</html>
+

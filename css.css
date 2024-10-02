@@ -1,0 +1,42 @@
+    body {
+            font-family: 'Times New Roman', Times, serif; 
+            background-color: #fa9898;
+            line-height: 1.6;
+        }
+        .container {   
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+    	}
+        .main-info {
+            background: #ffd8d8;
+            color: #a06868;
+            padding: 20px;
+        }
+        .main-info h1 {   
+            margin: 0;
+        }
+        .hobbies, .Updated, .time, .course, .fun-fact, .job, .pic, .introduction {
+            background: #ffd8d8;
+            color: #a06868;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .hobbies, .time, .Updated, .course, .fun-fact, .job, .pic, .introduction, .main-info {
+            border: 5px solid #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .pic img {
+            border: 5px solid #ffffff;
+        }
+        .animation {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+        
+        #hamster {
+            position: absolute;
+            bottom: 0;
+        }
